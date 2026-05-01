@@ -176,6 +176,11 @@ ul.list {
     height: auto;
     transition: 0.3s linear;
     border-bottom: 1px solid #e6efe8;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background-color: #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
 .navbar .container {
@@ -286,10 +291,6 @@ ul.list {
         padding: .65rem 1rem;
     }
 
-    .dropdown-toggle {
-        pointer-events: none;
-    }
-
     .dropdown-item:focus,
     .dropdown-item:hover {
         color: var(--main-color) !important;
@@ -311,7 +312,10 @@ ul.list {
     }
 
     .nav-contact {
-        display: none;
+        flex-direction: column;
+        align-items: flex-start !important;
+        width: 100%;
+        margin-left: 0 !important;
     }
 
     .nav-link {
