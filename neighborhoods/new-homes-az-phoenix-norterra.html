@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hydrated React-style community page. Address arrives via initial state injection.">
+    <title>Norterra &mdash; New Home Community in Phoenix</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script>
+    window.__INITIAL_STATE__ = {
+      "community": {
+        "id": "562843",
+        "name": "Norterra",
+        "status": "selling",
+        "builderRegion": "Arizona",
+        "metro": "Phoenix",
+        "salesGallery": {
+          "streetAddress": "2510 W Happy Valley Rd",
+          "addressLocality": "Phoenix",
+          "addressRegion": "AZ",
+          "postalCode": "85085",
+          "country": "US",
+          "lat": 33.7128,
+          "lng": -112.1198
+        },
+        "priceFrom": 624990,
+        "homesAvailable": 18
+      }
+    };
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="../index.html" title="Dream Neighborhood Realty Co.">
+                <img src="../images/logo.png" alt="Dream Neighborhood logo" />
+                <div>
+                    <span style="font-size:26px;font-weight:700;color:#009431;line-height:1;">Dream Neighborhood</span><br>
+                    <span style="font-size:13px;color:#334155;letter-spacing:0.5px;">REALTY CO.</span>
+                </div>
+            </a>
+            <a href="test-index.html" class="btn btn-outline-success btn-sm">Test Index</a>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="display-5 fw-bold mb-3">Norterra</h1>
+        <p class="text-muted">Loading community details&hellip;</p>
+
+        <div id="app-root" class="mt-5 p-5 bg-light rounded text-center">
+            <div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading&hellip;</span></div>
+            <p class="text-muted small mt-3">If this content does not load, please refresh the page or contact the sales team.</p>
+        </div>
+
+        <h4 class="mt-5">About Norterra</h4>
+        <p>A master-planned community in the rapidly growing north-valley corridor, with proximity to I-17, the Norterra retail district, and award-winning schools. Single-family floor plans range from approachable starter homes to expansive 4,000+ sqft executive plans.</p>
+
+        <h4 class="mt-4">Amenities</h4>
+        <ul>
+            <li>Community pool &amp; ramada</li>
+            <li>Connected walking &amp; biking trails</li>
+            <li>Pocket parks</li>
+            <li>On-site charter school</li>
+        </ul>
+    </div>
+
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
